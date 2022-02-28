@@ -36,7 +36,7 @@ def initiPre(c):
 # print(initiPre(a))
 
 def PageRank(q, A, pr):
-    # p是阻尼系数0.85，A是转移矩阵，pr是初始化的pr
+    # q是阻尼系数0.85，A是转移矩阵，pr是初始化的pr
     # 迭代n次后，当影响因子不发生变化，迭代停止
     n = 1
     while (pr == q*np.dot(A, pr) + (1-q)*pr).all() == False:  # all()是元素里有空或0，则为false
